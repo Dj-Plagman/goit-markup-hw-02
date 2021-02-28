@@ -2,6 +2,8 @@
     --main_fond: "Roboto", sans-serif;
     --secondary_fond: 'Raleway', sans-serif;
     --accent_color: #2196F3;
+    --title_text: #212121;
+    --text_basic: #757575;
 }
 
 body {
@@ -19,22 +21,34 @@ body {
 .adress {
     font-style: normal;
 }
-
+/*=======header=====*/
 .header {
     background: #FFFFFF;
 }
 
 .logo {
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
+    font-family: var(--secondary_fond);
+    font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    color: #000000;
 
+}
+
+.logo_white {
+    color: #000000
+}
+.logo_dark {
+    color: #FFFFFF;
 }
 
 .web {
 color: #2196F3;
+}
+
+.nav_list .link.current {
+    color: #2196F3;
 }
 
 .nav_list {
@@ -43,7 +57,7 @@ color: #2196F3;
     line-height: 1.14;
     letter-spacing: 0.02em;
     
-    color: #212121;    
+    color: var(--title_text); 
 }
 
 .nav_link:hover,
@@ -57,7 +71,7 @@ color: #2196F3;
     line-height: 1.14;
     letter-spacing: 0.02em;
 
-color: #757575;
+color: var(--text_basic);
 }
 
 .contakt_mail:hover,
@@ -71,13 +85,13 @@ color: #757575;
     line-height: 1.14;
     letter-spacing: 0.02em;
 
-color: #757575;
+color: var(--text_basic);
 }
 .contakt_tel:hover,
 .contakt_tel:focus {
     color: var(--accent_color);
 }
-
+/*====Hero===*/
 .hero {
     background: #2F303A;
 
@@ -90,11 +104,13 @@ color: #757575;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    color: #FFFFFF;
 
 }
 
 .button {
-    font-weight: bold;
+    font-family: var(--main_fond);
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     display: flex;
@@ -113,44 +129,54 @@ color: #757575;
 .button:hover {
     background: #188CE8
 }
-
+/*========особенности======*/
 .skills {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-color: #212121;
+    color: var(--title_text);
 }
 
 .skills_text {
-    font-weight: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 
-    color: #757575;
+    color: var(--text_basic);
 }
-
+/*======чем_мы_занимаемся======*/
 .we_work_h2 {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
 
-color: #212121;
+color: var(--title_text); 
+}
+/*======наша_команда======*/
+.team {
+    background: #F5F4FA
 }
 
 .team_h2 {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
 
-    color: #212121;
+    color: var(--title_text); 
+}
+
+.team_card {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .name_team {
@@ -160,32 +186,32 @@ color: #212121;
     text-align: center;
     letter-spacing: 0.03em;
 
-    color: #212121;
+    color: var(--title_text); 
 }
 
 .profeshinal {
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
 
-    color: #757575;
+    color: var(--text_basic);
 }
-
+/*======footer=========*/
 .footer {
     background-color: #2F303A;
 }
 
 .adress_link {
-    font-weight: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 
     color: #FFFFFF;
 }
-
+/*=======portfolio======*/
 .nav_portfolio {
     font-weight: 500;
     font-size: 16px;
@@ -193,7 +219,22 @@ color: #212121;
     text-align: center;
     letter-spacing: 0.03em;
 
-    color: #212121;
+    color: var(--title_text);
+    
+}
+
+.button_portfolio {
+    font-family: var(--main_fond);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--title_text);
+    
+    background: #F5F4FA;
+    border-radius: 4px;
 }
 
 .nav_portfolio :focus,
@@ -202,20 +243,26 @@ color: #212121;
     color: #FFFFFF;
 }
 
+.project_card {
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+}
+
 .project_title {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 
-    color: #212121;
+    color: var(--title_text);
 }
 
 .project_text {
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--text_basic);
 }
 
