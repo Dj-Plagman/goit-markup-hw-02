@@ -4,6 +4,12 @@
     --accent_color: #2196F3;
     --title_text: #212121;
     --text_basic: #757575;
+    --footer_color: rgba(255, 255, 255, 0.6);
+    --first_color: #FFFFFF;
+    --second_color: #000000;
+    --background_first: #2F303A;
+    --background_second: #F5F4FA;
+    --button_accent: #188CE8;
 }
 
 body {
@@ -12,6 +18,7 @@ body {
 
 .link {
     text-decoration: none;
+    color: var(--title_text);
 }
 
 .list {
@@ -23,7 +30,7 @@ body {
 }
 /*=======header=====*/
 .header {
-    background: #FFFFFF;
+    background: var(--first_color);
 }
 
 .logo {
@@ -32,23 +39,27 @@ body {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #000000;
+    color: var(--second_color);
+
+   /* border: 1px solid #000000;*/
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
 
 }
 
 .logo_white {
-    color: #000000
+    color: var(--second_color);
 }
 .logo_dark {
-    color: #FFFFFF;
+    color: var(--first_color);
 }
 
 .web {
-color: #2196F3;
+color: var(--accent_color);
 }
 
 .nav_list .link.current {
-    color: #2196F3;
+    color: var(--accent_color);
 }
 
 .nav_list {
@@ -64,14 +75,14 @@ color: #2196F3;
 .nav_link:focus {
     color: var(--accent_color);
 }
-
+/*===contacts====*/
 .contakt_mail {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 
-color: var(--text_basic);
+    color: var(--text_basic);
 }
 
 .contakt_mail:hover,
@@ -85,7 +96,7 @@ color: var(--text_basic);
     line-height: 1.14;
     letter-spacing: 0.02em;
 
-color: var(--text_basic);
+    color: var(--text_basic);
 }
 .contakt_tel:hover,
 .contakt_tel:focus {
@@ -93,7 +104,7 @@ color: var(--text_basic);
 }
 /*====Hero===*/
 .hero {
-    background: #2F303A;
+    background: var(--background_first)
 
 }
 
@@ -104,7 +115,7 @@ color: var(--text_basic);
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--first_color);
 
 }
 
@@ -118,16 +129,16 @@ color: var(--text_basic);
     text-align: center;
     letter-spacing: 0.06em;
 
-    color: #FFFFFF;
+    color: var(--first_color);
 
-    background: #2196F3;
+    background: var(--accent_color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
 
 .button:focus,
 .button:hover {
-    background: #188CE8
+    background: var(--button_accent)
 }
 /*========особенности======*/
 .skills {
@@ -160,7 +171,7 @@ color: var(--title_text);
 }
 /*======наша_команда======*/
 .team {
-    background: #F5F4FA
+    background: var(--background_second);
 }
 
 .team_h2 {
@@ -174,7 +185,7 @@ color: var(--title_text);
 }
 
 .team_card {
-    background: #FFFFFF;
+    background: var(--background_white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
@@ -200,7 +211,7 @@ color: var(--title_text);
 }
 /*======footer=========*/
 .footer {
-    background-color: #2F303A;
+    background-color: var(--background_first);
 }
 
 .adress_link {
@@ -209,8 +220,12 @@ color: var(--title_text);
     line-height: 1.71;
     letter-spacing: 0.03em;
 
-    color: #FFFFFF;
+    color: var(--first_color);
 }
+.footer_color {
+    color: var(--footer_color);
+}
+
 /*=======portfolio======*/
 .nav_portfolio {
     font-weight: 500;
@@ -233,18 +248,18 @@ color: var(--title_text);
 
     color: var(--title_text);
     
-    background: #F5F4FA;
+    background: var(--background_second);
     border-radius: 4px;
 }
 
 .nav_portfolio :focus,
 .nav_portfolio :hover {
-    background-color: #2196F3;
-    color: #FFFFFF;
+    background-color: var(--accent_color);
+    color: var(--first_color);
 }
 
 .project_card {
-    background: #FFFFFF;
+    background: var(--first_color);
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
 }
